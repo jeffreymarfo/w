@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+Header {
+    background-color:#1F2F16;
+    color: white;
+    padding: 25px;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+}
+
+/* Style the header */
+
+li {
+    display: inline;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #395B50;
+  }
+  
+  li {
+    float: left;
+  }
+
+
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 17vh;
+  }
+  
+  /* Change the link color to  hover */
+  li a:hover {
+    background-color: #395B50;
+  }
+
+nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+   
+}
+
+.img {
+    width: 150px;
+    height: 300px;
+    object-fit: circle;
+    margin-left: 89vh;
+    border-radius: 100px;
+    border: 3px solid #1F2F16(261 0% 0%);
+    border: 3px solid #108106b4;
+    background-color: #395B50;
+    border: 3px solid #1F2F16;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+main {
+    color: black;
+    display: block;
+    grid-area: main;
+}
+
+p {
+    background-color: darkblue;
+    color:black;
+    display: block;
+    width: 150px;
+    height: 50px;
+    
+}
+
+
+
+section {
+    background-color: rgb(234, 167, 239);
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border: 3px dashed rgba(89, 0, 255, 0.833);
+    border-radius: 15px;
+}
+
+.inxbutton1 input{
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #000;
+  background-color: #395B50;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  object-fit: cover;
+  margin-left: 92.3vh;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 3px solid #1F2F16;
+  
+}
+
+.inxbox {
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #000;
+  background-color: #395B50;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  object-fit: cover;
+  margin-left: 92.3vh;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 3px solid #1F2F16;
+  
+}
+
+.jmp {
+  margin-left: 5px;
+}
+
+.h4{
+  margin-left: 85vh;
+}
+body {
+    display: grid;
+    background-color: #C5D1EB;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "header header header"
+              "nav nav nav"
+              "main main aside"
+              "footer footer footer"
+    
+  }
+/*animation*/
+
+
+  aside {
+    background-color: #395B50;
+    padding:50px;
+    grid-area: aside;
+}
+
+  footer {
+    bottom: 0;
+    width: 100%;
+    position: solid;
+    background-color: rgb(87, 83, 83);
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2F16;
+    color: white;
+    grid-area: footer;
+}
+ 
+
+
+/*animation*/
+body {
+    background: red;
+    animation: mymove 4s infinite;
+  }
+  
+  @keyframes mymove {
+    from {background-color: rgb(252, 204, 252);}
+    to {background-color: rgb(205, 249, 255);}
+  }
+
+  footer a {
+    font-size: 3.5em;
+    padding: 0 0.5em;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .report div img {
+    width: 300px;
+    height: 200px;
+  
+  }
+  
+  .progress {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    width: 300px;
+    height: 200px;
+  
+  }
+  
+  .validation{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    padding-bottom: 2em;
+    width: 300px;
+    height: 200px;
+  
+  }
+  
+  .report h2 {
+    padding-top: 2em;
+  }
+  
+  .report {
+    padding: 0 5%;
+  }

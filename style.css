@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+Header {
+    background-color:#395B50;
+    color: white;
+    padding: 25px;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+}
+
+/* Style the header */
+
+
+nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+   
+}
+ 
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  text-align: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: #1F2F16;
+  text-align: center;
+  text-decoration: none;
+  height: 35px;
+  padding-block-start: 1em;
+}
+
+/* Change the link color to  hover */
+li a:hover {
+  background-color: #C5D1EB;
+}
+/*submenu*/
+nav> ul > li {
+  position: relative;
+}
+
+
+nav ul ul {
+  position: absolute;
+  display: block;
+  background-color: rgb(180, 174, 174);
+  padding: 0%;
+  width: 100%;
+  display: none;
+}
+
+nav ul ul {
+  position: absolute;
+  display: block;
+  background-color: rgb(180, 174, 174);
+  padding: 0%;
+  width: 100%;
+ opacity: 0;
+ transition: opacity 0.7s ease-in-out;
+  margin-top: 14px;
+}
+
+nav > ul >li:hover ul {
+  opacity: 1;
+}
+
+nav > ul >li:hover ul {
+  display: block;
+}
+
+nav> ul > li:hover ul {
+
+background-color: green;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: circle;
+    border-radius: 100px;
+    border: 3px solid #1F2F16(261 0% 0%);
+    border: 3px solid #108106b4;
+    background-color: #395B50;
+    border: 3px solid #1F2F16;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+main {
+    color: rgb(255, 255, 255);
+    display: block;
+    grid-area: main;
+}
+
+p {
+    color:rgb(255, 255, 255);
+    display: inline;
+    width: 150px;
+    height: 50px;
+    
+}
+
+
+section {
+    background-color: dark gray;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid rgba(108, 107, 109, 0.833);
+    border-radius: 15px;
+}
+
+.inxbutton1 input{
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #000;
+  background-color: #395B50;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  object-fit: cover;
+  margin-left: 13.5vh;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 3px solid #1F2F16;
+  
+}
+
+.inxbox {
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #000;
+  background-color: #395B50;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  object-fit: cover;
+
+  border-radius: 20px;
+  border: 3px solid #1F2F16;
+  
+}
+
+.jmp {
+  margin-left: 5px;
+}
+
+.h4{
+
+  padding-bottom: 2em;
+}
+body {
+    display: grid;
+    background-color: #131515;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "nav nav"
+              "header header"
+              "main aside"
+              "footer footer";
+    
+  }
+/*animation*/
+
+
+  aside {
+    background-color: #395B50;
+    color: white;
+    padding:50px;
+    grid-area: aside;
+}
+
+  footer {
+    bottom: 0;
+    width: 100%;
+    position: solid;
+    background-color: rgb(87, 83, 83);
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2F16;
+    color: white;
+    grid-area: footer;
+}
+ 
+
+.circle {
+  width: 10em;
+  height: 10em;
+  background-color: red;border-radius: 100%;
+  border-radius: 100%;
+  animation: move_the_circle 10s infinite;
+}
+
+
+@keyframes move_the_circle {
+  0% {
+    background-color: #131515;
+    transform: translate(0,0);
+  
+  }
+
+  10% {
+    background-color: rgb(198, 198, 198);
+    transform: translate(50vw,0vh);
+  }
+  
+  25% {
+    background-color: #395B50;
+    transform: translate(25vw,30vh);
+  }
+  
+  50% {
+    transform: translate(50vh,55vh);
+    
+    background-color: blue;
+  }
+  
+  70% {
+    background-color: rgb(0, 179, 255);
+    transform: translate(57vw,60vh);
+    width: 5em;
+    height: 5em;
+  }
+
+  80% {
+    background-color: rgb(99, 121, 131);
+    transform: translate(55vw,0vh);
+  }
+  
+  100% {
+    background-color: #131515;
+    transform: translate(0,0);
+   
+  }
+
+}
+
+footer a {
+  font-size: 3.5em;
+  padding: 0 0.5em;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.portafolio img {
+  width: 400px;
+  height: 260px;
+
+}
+
+.portafolio {
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-template-rows: auto;
+  padding: 1em;
+ 
+}
+
+.portafolio div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+
+.progress img {
+  width: 400px;
+  height: 260px;
+
+}
+
+.progress {
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-template-rows: auto;
+  padding: 1em;
+ 
+}
+
+.progress div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.validation img {
+  width: 400px;
+  height: 260px;
+
+}
+
+.validation {
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-template-rows: auto;
+  padding: 1em;
+  
+}
+
+.validation div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Style the form labels */
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style the form inputs */
+input, textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
